@@ -1,0 +1,17 @@
+name: EscMenuTR
+version: '${project.version}'
+main: tr.escmenu.EscMenuPlugin
+api-version: '1.21'
+description: Turkce ESC menusu - resource pack gonderme ve sunucu baglantilari
+commands:
+  discord:
+    description: Discord baglantisini gosterir
+    usage: /discord
+  escmenu:
+    description: EscMenuTR yonetim komutu
+    usage: /escmenu <reload|pack>
+    permission: escmenu.admin
+permissions:
+  escmenu.admin:
+    description: EscMenuTR yonetim yetkisi
+    default: op

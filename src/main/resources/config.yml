@@ -1,0 +1,51 @@
+# ============================================================
+#  EscMenuTR - Ayarlar
+# ============================================================
+
+resource-pack:
+  # false yaparsan plugin pack gondermez (pack'i server.properties'ten de yukleyebilirsin)
+  enabled: true
+
+  # Pack'in INDIRME LINKI (dogrudan .zip indirmeli, ornek: GitHub Release linki)
+  url: "https://ORNEK.com/EscMenuTR-Pack.zip"
+
+  # SHA-1 hash. BOS BIRAKIRSAN plugin acilista linkten indirip kendisi hesaplar (onerilen).
+  sha1: ""
+
+  # Pack'i degistirdiginde bu numarayi artir -> oyuncular yeni surumu indirir
+  version: 1
+
+  # true: pack'i kabul etmeyen oyuncu sunucudan atilir
+  force: false
+
+  # Pack penceresinde gorunen mesaj (MiniMessage formati)
+  prompt: "<gold><bold>Sunucu menusu</bold></gold> <gray>icin kaynak paketi yukle!"
+
+  kick-message: "<red>Sunucuya girmek icin kaynak paketini kabul etmelisin!"
+
+# ESC menusundeki "Sunucu Baglantilari" bolumu (Minecraft 1.21+).
+# type: FEEDBACK ve REPORT_BUG yazarsan ESC menusundeki
+# "Geribildirim" ve "Hata Bildir" butonlari bu linklere gider.
+# Diger turler: ANNOUNCEMENTS, COMMUNITY, COMMUNITY_GUIDELINES, FORUMS, NEWS, STATUS, SUPPORT, WEBSITE
+# Ozel isim istersen "type" yerine "name" kullan.
+server-links:
+  - name: "Discord"
+    url: "https://discord.gg/ORNEK"
+  - name: "Web Sitesi"
+    url: "https://ORNEK.com"
+  - type: FEEDBACK
+    url: "https://discord.gg/ORNEK"
+  - type: REPORT_BUG
+    url: "https://discord.gg/ORNEK"
+
+# /discord komutu
+discord:
+  url: "https://discord.gg/ORNEK"
+  message: "<gradient:#ffb300:#ff3b00><bold>Cekilis ve etkinliklerden haberdar olmak icin:</bold></gradient> <click:open_url:'{url}'><aqua><underlined>{url}</underlined></aqua></click>"
+
+messages:
+  reloaded: "<green>EscMenuTR ayarlari yenilendi."
+  pack-resent: "<green>Kaynak paketi yeniden gonderildi."
+  pack-not-ready: "<red>Kaynak paketi hazir degil (url veya hash hatasi). Konsolu kontrol et."
+  no-permission: "<red>Bunun icin yetkin yok."
+  usage: "<yellow>Kullanim: /escmenu <reload|pack>"
